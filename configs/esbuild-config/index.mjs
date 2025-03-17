@@ -10,7 +10,7 @@ const filesMts = globSync("src/**/*.{ts,mts,tsx,json}");
 const excludeNodeModulesPlugin = NodeResolvePlugin({
     extensions: [".ts", ".js", ".json"],
     onResolved: (resolved) => {
-        //console.debug(resolved)
+        // console.debug(resolved)
         if (resolved.includes("node_modules")) {
             return {
                 external: true,
@@ -23,7 +23,7 @@ const excludeNodeModulesPlugin = NodeResolvePlugin({
 const ESBUILD_WATCH = process.env.ESBUILD_WATCH === "true" || process.env.ESBUILD_WATCH === "1";
 
 const external = ["url", "events", "path"];
-const inject = []; //['./react-shim.mjs']
+const inject = []; // ['./react-shim.mjs']
 
 export const baseConfig = {
     sourcemap: "external",
@@ -33,17 +33,17 @@ export const baseConfig = {
     plugins: [excludeNodeModulesPlugin],
 };
 
-//CJS Library (Testing)
+// CJS Library (Testing)
 export const cjsLibConfig = {
     entryPoints: filesCts,
     bundle: false,
     outdir: "lib/cjs",
-    //outExtension: { '.js': '.cjs' },
+    // outExtension: { '.js': '.cjs' },
     format: "cjs",
     ...baseConfig,
 };
 
-//ESM Library
+// ESM Library
 export const esmLibConfig = {
     entryPoints: filesMts,
     bundle: false,
@@ -52,7 +52,7 @@ export const esmLibConfig = {
     ...baseConfig,
 };
 
-//CJS Bundle
+// CJS Bundle
 export const cjsBundleConfig = {
     entryPoints: ["src/index.ts"],
     bundle: true,
@@ -73,7 +73,7 @@ export const cjsBundleMinConfig = {
     ...baseConfig,
 };
 
-//ESM Bundle
+// ESM Bundle
 export const esmBundleConfig = {
     entryPoints: ["src/index.ts"],
     bundle: true,
@@ -101,7 +101,7 @@ export const distConfigs = [cjsBundleConfig, cjsBundleMinConfig, esmBundleConfig
 export const configs = [...libConfigs, ...distConfigs];
 
 export async function buildConfig(c) {
-    //Write package.json
+    // Write package.json
     if (!c.bundle) {
         const dir = c.outdir;
         if (!existsSync(dir)) {
@@ -115,10 +115,11 @@ export async function buildConfig(c) {
     }
 
     if (!ESBUILD_WATCH) {
-        //Static build
+        // Static build
         await esbuild.build(c);
-    } else {
-        //Incremental build
+    }
+    else {
+        // Incremental build
         const ctx = await esbuild.context(c);
         await ctx.watch();
     }
@@ -141,7 +142,7 @@ export function buildDistCJS() {
 }
 
 export function buildLib() {
-    //Write package.json
+    // Write package.json
     return Promise.all(libConfigs.map(buildConfig));
 }
 

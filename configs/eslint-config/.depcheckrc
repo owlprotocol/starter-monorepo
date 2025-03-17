@@ -1,6 +1,0 @@
-ignores: [
-    "eslint-import-resolver-typescript",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
-    "eslint-plugin-react-refresh",
-]

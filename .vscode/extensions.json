@@ -10,6 +10,7 @@
     "JuanBlanco.solidity", //Solidity
     "wayou.vscode-todo-highlight", //Highlight TODOs
     "vscodevim.vim", //Vim Emulation
+    "dbaeumer.vscode-eslint", //ESLint support
     "redhat.vscode-yaml", //Yaml support
     "ChFlick.firecode", //Firestore security rules
     "bradlc.vscode-tailwindcss", //Tailwind syntax

@@ -20,9 +20,6 @@ importers:
       dotenv-vault:
         specifier: 1.26.2
         version: 1.26.2(@types/node@22.13.10)(typescript@5.8.2)
-      husky:
-        specifier: ^9.1.7
-        version: 9.1.7
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -1936,11 +1933,6 @@ packages:
   human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
-
-  husky@9.1.7:
-    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   hyperlinker@1.0.0:
     resolution: {integrity: sha512-Ty8UblRWFEcfSuIaajM34LdPXIhbs1ajEX/BBPv24J+enSVaEVY63xQ6lTO9VRYS5LAoghIG0IDJ+p+IPzKUQQ==}
@@ -5666,8 +5658,6 @@ snapshots:
   human-id@4.1.1: {}
 
   human-signals@5.0.0: {}
-
-  husky@9.1.7: {}
 
   hyperlinker@1.0.0: {}
 

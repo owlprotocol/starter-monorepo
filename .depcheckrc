@@ -1,5 +1,4 @@
 ignores: [
     "rimraf",
-    "dotenv",
-    "husky"
+    "dotenv"
 ]

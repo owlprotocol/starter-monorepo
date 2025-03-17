@@ -31,12 +31,14 @@
     "lint": "eslint index.mjs",
     "lint:fix": "eslint index.mjs --fix"
   },
-  "devDependencies": {
-    "@esbuild-plugins/node-resolve": "^0.1.4",
-    "esbuild": "^0.19.2",
-    "glob": "10.3.10",
+  "peerDependencies": {
+    "@esbuild-plugins/node-resolve": "^0.2.2",
     "@veraswap/eslint-config": "workspace:*",
     "@veraswap/prettier-config": "workspace:*",
+    "esbuild": "^0.25.1",
+    "glob": "11.0.1"
+  },
+  "devDependencies": {
     "depcheck": "^1.4.7"
   },
   "bugs": {

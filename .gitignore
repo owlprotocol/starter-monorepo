@@ -21,6 +21,9 @@ dist
 dist-ssr
 lib
 .serverless
+_cjs
+_esm
+_types
 
 # misc
 .DS_Store

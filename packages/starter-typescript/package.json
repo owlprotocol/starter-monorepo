@@ -17,26 +17,27 @@
     "url": "https://github.com/leovigna"
   },
   "files": [
-    "dist/*",
-    "lib/*",
+    "_cjs/*",
+    "_esm/*",
+    "_types/*",
     "src/*",
     "LICENSE",
     "README.md"
   ],
-  "main": "./lib/cjs/index.cjs",
-  "module": "./lib/esm/index.mjs",
-  "types": "./lib/types/index.d.ts",
+  "main": "./_cjs/lib/index.cjs",
+  "module": "./_esm/lib/index.mjs",
+  "types": "./_types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./lib/types/index.d.ts",
-      "require": "./lib/cjs/index.js",
-      "import": "./lib/esm/index.js"
+      "types": "./_types/index.d.ts",
+      "require": "./_cjs/lib/index.js",
+      "import": "./_esm/lib/index.js"
     }
   },
   "scripts": {
     "build": "npm-run-all -p tsc esbuild",
     "build:watch": "npm-run-all -p tsc:watch esbuild:watch",
-    "clean": "rimraf lib dist",
+    "clean": "rimraf _cjs _esm _types .turbo",
     "depcheck": "depcheck",
     "esbuild": "node esbuild.config.mjs",
     "esbuild:watch": "ESBUILD_WATCH=true node esbuild.config.mjs",

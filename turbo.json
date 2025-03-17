@@ -12,9 +12,9 @@
                 "^build"
             ],
             "outputs": [
-                "build/**",
-                "dist/**",
-                "lib/**"
+                "_cjs/**",
+                "_esm/**",
+                "_types/**"
             ]
         },
         "depcheck": {

@@ -11,7 +11,6 @@ Comes out of the box with configuration for helpful devtools
 - [changesets](https://github.com/changesets/changesets): For automated package release management
 - [esbuild](https://esbuild.github.io/): For fast Typescript transpilation to JS with shared config
 - [eslint](https://eslint.org/): For linting with shared config
-- [prettier](https://prettier.io/): For additional code formatting rules with shared config
 
 Additional configs include
 - [.vscode/extensions.json](./.vscode/extensions.json): Recommended VSCode extensions

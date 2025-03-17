@@ -1,8 +1,8 @@
 {
-  "name": "@owlprotocol/starter-monorepo",
-  "version": "2.0.1",
+  "name": "@veraswap/starter-monorepo",
+  "version": "1.0.0",
   "private": true,
-  "description": "Owl Protocol Starter Monorepo",
+  "description": "Veraswap Starter Monorepo",
   "keywords": [
     "pnpm",
     "workspace"
@@ -43,6 +43,7 @@
     "syncpack": "^13.0.3",
     "turbo": "^2.4.4"
   },
+  "packageManager": "pnpm@9.12.2",
   "engines": {
     "npm": ">=v10.5.0",
     "pnpm": ">=9.12.2",

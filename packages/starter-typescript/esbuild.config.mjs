@@ -1,3 +1,3 @@
-import { buildLib } from "@owlprotocol/esbuild-config";
+import { buildLib } from "@veraswap/esbuild-config";
 
 await buildLib();

@@ -1,19 +1,19 @@
 {
-  "name": "@owlprotocol/starter-typescript",
-  "version": "3.0.0",
+  "name": "@veraswap/starter-typescript",
+  "version": "1.0.0",
   "keywords": [],
   "private": true,
   "type": "module",
-  "homepage": "https://github.com/owlprotocol/workspace-public",
+  "homepage": "https://github.com/veraswap-io/workspace-public",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owlprotocol/workspace-public.git"
+    "url": "https://github.com/veraswap-io/workspace-public.git"
   },
-  "copyright": "Copyright 2024 Owl Protocol",
+  "copyright": "Copyright 2024 Veraswap",
   "license": "MIT",
   "author": {
     "name": "Leo Vigna",
-    "email": "leo@owlprotocol.xyz",
+    "email": "leo@veraswap.io",
     "url": "https://github.com/leovigna"
   },
   "files": [
@@ -52,10 +52,10 @@
     "tsc:watch": "tsc -w"
   },
   "devDependencies": {
-    "@owlprotocol/esbuild-config": "^3.1.2",
-    "@owlprotocol/eslint-config": "^3.2.1",
-    "@owlprotocol/prettier-config": "^3.1.2",
-    "@owlprotocol/tsconfig": "^3.1.2",
+    "@veraswap/esbuild-config": "latest",
+    "@veraswap/eslint-config": "latest",
+    "@veraswap/prettier-config": "latest",
+    "@veraswap/tsconfig": "latest",
     "@types/node": "^22.13.10",
     "@typescript/analyze-trace": "^0.10.1",
     "depcheck": "^1.4.7",
@@ -68,10 +68,10 @@
     "vitest": "^3.0.8"
   },
   "bugs": {
-    "url": "https://github.com/owlprotocol/workspace-public/issues",
-    "email": "leo@owlprotocol.xyz"
+    "url": "https://github.com/veraswap-io/workspace-public/issues",
+    "email": "leo@veraswap.io"
   },
-  "funding": "https://owlprotocol.xyz",
+  "funding": "https://veraswap.io",
   "engines": {
     "node": "^18.0.0"
   }

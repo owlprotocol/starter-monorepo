@@ -1,11 +1,10 @@
 import { hello } from "./hello.js";
 
 async function main() {
-    while (true) {
-        console.log(`${Date.now()} ${hello()}`);
-    }
+    await new Promise(resolve => setTimeout(resolve, 200));
+    console.log(`${Date.now()} ${hello()}`);
 }
 
 if (typeof require !== "undefined" && require.main === module) {
-    main();
+    main().catch(console.error);
 }

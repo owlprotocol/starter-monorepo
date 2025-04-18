@@ -6,39 +6,41 @@
   "editor.formatOnType": false, // required
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
+  "editor.fontSize": 18,
+  "editor.detectIndentation": true,
   "files.watcherExclude": {
+    "**/_cjs/**": true,
+    "**/_esm/**": true,
+    "**/_types/**": true,
     "**/dist/**": true,
     "**/dist-ssr/**": true,
     "**/build/**": true,
     "**/lib/**": true,
-    "**/storybook-static/**": true,
     "**/node_modules/**": true,
     "**/coverage/**": true,
     ".turbo": true,
-    "packages-archived/**": true,
-    "starters/**": true
   },
   "search.exclude": {
+    "**/_cjs/**": true,
+    "**/_esm/**": true,
+    "**/_types/**": true,
     "**/dist/**": true,
     "**/dist-ssr/**": true,
     "**/build/**": true,
     "**/lib/**": true,
-    "**/storybook-static/**": true,
     "**/node_modules/**": true,
     "**/coverage/**": true,
     ".turbo": true,
-    "packages-archived/**": true,
-    "starters/**": false,
   },
   "search.followSymlinks": false,
   "[json]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
@@ -58,13 +60,8 @@
       "other": "off"
     }
   },
-  "solidity.remappings": [
-    "ds-test/=packages/contracts/packages/owlprotocol-contracts/lib/forge-std/lib/ds-test/src/",
-    "forge-std/=packages/contracts/packages/owlprotocol-contracts/lib/forge-std/src/",
-    "contracts/=packages/contracts/packages/owlprotocol-contracts/contracts/"
-  ],
+  "solidity.remappings": [],
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.tsdk": "./node_modules/typescript/lib",
   "git.ignoreLimitWarning": true
 }

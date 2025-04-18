@@ -1,1 +1,1 @@
-//Declare packages that don't come with types here
+// Declare packages that don't come with types here
